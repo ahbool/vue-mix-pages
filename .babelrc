@@ -1,0 +1,25 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                  "browsers": [
+                    "last 5 versions",
+                    "not ie < 11",
+                    "ios >= 7",
+                    "android >= 4.0"
+                  ]
+                },
+                "exclude": ["transform-regenerator", "transform-async-to-generator"],
+                "modules": false,
+                "debug": false,
+                "loose": true,
+                "useBuiltIns": true
+            }
+        ]
+    ],
+    "plugins": [
+        ["transform-object-rest-spread", { "useBuiltIns": true }]
+    ]
+}

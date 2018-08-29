@@ -1,0 +1,48 @@
+{
+  "name": "vue-mix-pages",
+  "version": "0.1.0",
+  "description": "基于vue2的多页+单页混合应用框架",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config ./build/webpack.prod.conf.js",
+    "dev": "webpack-dev-server --config ./build/webpack.dev.conf.js",
+    "mock-stop": "forever stopall",
+    "mock-restart": "forever restartall",
+    "mock": "npm run mock-stop && forever start ./mock/mock-server.js",
+    "start": "npm run mock && npm run dev"
+  },
+  "keywords": ["多页应用", "vue多页应用", "多页和单页"],
+  "author": "ahbool",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "cssnano": "^4.0.5",
+    "file-loader": "^1.1.11",
+    "forever": "^0.15.3",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.21.0",
+    "vue-loader": "^15.2.6",
+    "vue-style-loader": "^4.1.1",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "qs": "^6.5.2",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  }
+}

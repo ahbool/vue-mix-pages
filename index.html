@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <title>index</title>
+    <script type="text/javascript">
+        (function(doc, win) {
+            var de = doc.documentElement
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize'
+            var recalc = function() {
+                    var clientWidth = de.clientWidth;
+                    if (!clientWidth) return;
+                    de.style.fontSize = 100 * (clientWidth / 414) + 'px';
+            };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+  </head>
+  <body>
+    <div id="app">
+
+    </div>
+  </body>
+</html>
