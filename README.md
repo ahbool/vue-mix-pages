@@ -167,7 +167,7 @@ main.init(List)
 &nbsp;
 
 ## mock数据
-[查看 ./mock/README.MD](./mock/README.MD "查看mock服务的使用说明")
+[查看 ./mock/README.md](./mock/README.md "查看mock服务的使用说明")
 
 
 &nbsp;
