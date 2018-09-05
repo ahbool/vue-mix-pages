@@ -10,6 +10,10 @@
 │     ├─webpack.dev.conf.js         /* 开发环境配置文件 */
 │     └─webpack.prod.conf.js        /* 生产环境配置文件 */
 │
+├──mock                             /* mock服务和mock数据 */
+│    ├─api                          /* 存放mock数据 */
+│    └─mock-server.js               /* mock服务 */
+│
 ├──src                              /* 项目源码 */
 │    │
 │    ├─api                          /* 所有后端接口 */
