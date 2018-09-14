@@ -111,7 +111,7 @@ exports.entries = function(){
     多页面输出配置
 
     目录下有'entry.js'文件的会当作打包入口
-    目录下有'tmpl.html'文件的会当作入口页面模板
+    目录下有'entry.html'文件的会当作入口页面模板
  */
 exports.htmlWebpackPlugin = function(){
   let arr = []
